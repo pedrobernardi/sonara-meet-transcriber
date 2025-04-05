@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonara Meet Transcriptor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="icons/icon48.png" alt="Sonara Logo" class="logo">
+      <h1>Sonara Meet Transcriptor</h1>
+    </header>
+    
+    <div class="status-container">
+      <div class="status-indicator">
+        <span id="status-badge" class="badge">Inativo</span>
+      </div>
+      <div class="meeting-info" id="meeting-info">
+        Aguardando reunião...
+      </div>
+    </div>
+    
+    <div class="controls">
+      <button id="toggle-recording" class="btn primary">
+        <span class="btn-icon">●</span>
+        <span class="btn-text">Iniciar Gravação</span>
+      </button>
+      
+      <button id="download-transcript" class="btn secondary" disabled>
+        <span class="btn-icon">↓</span>
+        <span class="btn-text">Baixar Transcrição</span>
+      </button>
+      
+      <button id="clear-transcript" class="btn secondary" disabled>
+        <span class="btn-icon">✕</span>
+        <span class="btn-text">Limpar</span>
+      </button>
+    </div>
+    
+    <div class="transcript-preview">
+      <h2>Prévia da Transcrição</h2>
+      <div id="transcript-content" class="transcript-content">
+        <p class="empty-state">A transcrição aparecerá aqui quando disponível.</p>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>Para transcrever, certifique-se de ativar as legendas no Google Meet.</p>
+      <p class="version">Sonara Meet Transcriptor v1.0.0</p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+
